@@ -1,0 +1,135 @@
+<html><head><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>𝕸𝖚𝖘𝖎𝖈💕𝕮𝖍𝖔𝖎𝖈𝖊𝖘</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+           
+            width: 290px;
+            height: 486px;
+        }
+        video.side-video {
+            position: absolute;
+            top: 90px;
+            width: 290px;
+            height: 486px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.3);
+            z-index: 1;
+        }
+        .left-video { left: 95px; }
+        .right-video { right: 88px; }
+        img.center-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 728px;
+            height: 486px;
+            pointer-events: none;
+            user-select: none;
+            z-index: 10;
+        }
+
+        /* */
+        .gif-left, .gif-right {
+            position: absolute;
+            width: 260px;  /*  */
+            height: auto;
+            z-index: 20;
+            top: 75%;      /* */
+            transform: translateY(-50%);
+        }
+
+        .gif-left {
+            left: 108px;  /* */
+        }
+
+        .gif-right {
+            right: 108px; /* */
+        }
+
+         /**/
+        .gif1-left, .gif2-right {
+            position: absolute;
+            width: 260px;  /*  */
+            height: auto;
+            z-index: 20;
+            top: 80%;      /*  */
+            transform: translateY(-50%);
+        }
+
+        .gif1-left {
+            left: 108px;  /* */
+        }
+
+        .gif2-right {
+            right: 108px; /*  */
+    }
+      /*  */
+.video-text {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px; 
+    font-weight: bold;
+    color: #ffffffcc;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #0088ff;
+    white-space: nowrap;
+    z-index: 4;
+    animation: flashHeartbeat 25s infinite;
+}
+
+/*  */
+@keyframes flashHeartbeat {
+    0%, 20% {
+        opacity: 1;
+        bottom: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+    5%, 15% {
+        transform: translateX(-50%) scale(1.2); 
+    }
+    21%, 100% {
+        opacity: 0;
+        bottom: 8px;
+        transform: translateX(-50%) scale(1);
+    }
+}
+    </style>
+</head>
+<body oncontextmenu="return false">
+
+    <div class="container">
+        <!--  -->
+        <video id="video-left" class="side-video left-video" autoplay="" loop="" muted="" playsinline="">
+            <source src="https://choises.github.io/ne/54.mp4" type="video/mp4">
+        </video>
+<div class="video-text">Καλή Κυριακή!
+</div>
+        <!--  -->
+        <video id="video-right" class="side-video right-video" autoplay="" loop="" muted="" playsinline="">
+            <source src="https://choises.github.io/ne/54.mp4" type="video/mp4">
+        </video>
+<div class="video-text">Καλή Κυριακή!
+</div>
+        <!--  -->
+
+
+           </div>
+
+</body></html>
